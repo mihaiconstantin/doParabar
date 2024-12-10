@@ -1,4 +1,4 @@
-#' @title Foreach Parallel Adaptor For The `parabar` Package
+#' @title Foreach Parallel Adaptor For `parabar` Backends
 #'
 #' @details The [`doParabar::doParabar`] package acts as a [`foreach::foreach`]
 #' parallel adaptor for [`parabar::parabar`] backends. It provides a minimal
