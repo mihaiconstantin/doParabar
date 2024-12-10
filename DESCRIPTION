@@ -1,0 +1,24 @@
+Package: doParabar
+Title: Foreach Parallel Adaptor For The `parabar` Package
+Version: 0.0.1
+Authors@R:
+    person(given = "Mihai",
+           family = "Constantin",
+           role = c("aut", "cre"),
+           email = "mihai@mihaiconstantin.com",
+           comment = c(ORCID = "0000-0002-6460-0107"))
+Description: Provides a parallel backend for the `foreach::%dopar%` function
+    using the `parabar` package.
+License: MIT + file LICENSE
+URL: https://github.com/mihaiconstantin/doParabar
+BugReports: https://github.com/mihaiconstantin/doParabar/issues
+Imports:
+    parabar,
+    foreach,
+    iterators
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
