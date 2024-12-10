@@ -1,5 +1,5 @@
 Package: doParabar
-Title: Foreach Parallel Adaptor For The `parabar` Package
+Title: Foreach Parallel Adaptor For `parabar` Backends
 Version: 0.0.1
 Authors@R:
     person(given = "Mihai",
@@ -7,8 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "mihai@mihaiconstantin.com",
            comment = c(ORCID = "0000-0002-6460-0107"))
-Description: Provides a parallel backend for the `foreach::%dopar%` function
-    using the `parabar` package.
+Description: Provides a `foreach` parallel adaptor for `parabar` backends.
 License: MIT + file LICENSE
 URL: https://github.com/mihaiconstantin/doParabar
 BugReports: https://github.com/mihaiconstantin/doParabar/issues
