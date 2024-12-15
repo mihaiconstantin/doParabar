@@ -39,6 +39,14 @@
 #' developing an `R` package). Package startup messages can be suppressed via
 #' [base::suppressPackageStartupMessages()].
 #'
+#' @section Automatic Exporting:
+#' Note that [`doParabar::doParabar`] does not automatically export variables to
+#' the backend. Instead, I strongly recommend being explicit about what you want
+#' to export to the backend and use the `.export` and `.noexport` arguments.
+#' Similarly, the `.packages` argument can be used to indicate which packages
+#' should be loaded on the backend. Please check the **Details** section of the
+#' documentation for [`doParabar::doPar()`] for all supported arguments.
+#'
 #' @section Resources:
 #' - For more information about [`parabar::parabar`], please consult de
 #' documentation and examples at
