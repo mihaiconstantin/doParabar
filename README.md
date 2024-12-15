@@ -18,7 +18,7 @@
     <a href="https://www.r-pkg.org/pkg/doParabar"><img src="https://cranlogs.r-pkg.org/badges/grand-total/doParabar" alt="CRAN RStudio mirror downloads"/></a>
     <a href="https://github.com/mihaiconstantin/doParabar/actions"><img src="https://github.com/mihaiconstantin/doParabar/workflows/R-CMD-check/badge.svg" alt="R-CMD-check" /></a>
     <a href="https://cran.r-project.org/web/checks/check_results_doParabar.html"><img src="https://badges.cranchecks.info/worst/doParabar.svg" alt="CRAN checks"/></a>
-    <a href="https://parabar.mihaiconstantin.com"><img src="https://img.shields.io/badge/docs-website-brightgreen" alt="Documentation website"/></a>
+    <a href="https://parabar.mihaiconstantin.com/articles/foreach"><img src="https://img.shields.io/badge/docs-website-brightgreen" alt="Documentation website"/></a>
 </p>
 <!-- badges: end -->
 
