@@ -16,9 +16,11 @@
 
 
 # Imports.
-#' @importFrom parabar par_lapply
-#' @importFrom foreach setDoPar getResult
+#' @importFrom parabar Helper export evaluate par_lapply
+#' @importFrom foreach setDoPar getResult makeAccum
 #' @importFrom iterators iter
+#' @importFrom utils packageDescription
+
 
 #' @template doParabar
 "_PACKAGE"
