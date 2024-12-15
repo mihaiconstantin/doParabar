@@ -23,6 +23,7 @@ Collate:
     'doParabar-package.R'
     'doParabar.R'
     'helpers.R'
+    'logo.R'
     'registerDoParabar.R'
 Suggests:
     testthat (>= 3.0.0)
