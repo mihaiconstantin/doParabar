@@ -30,17 +30,10 @@
 #' - ❗️ indicates that the argument is partially supported
 #' - ❓ indicates that I am unsure about what the argument does
 #'
-#' @section Automatic Exporting:
-#' Note that [`doParabar::doParabar`] does not automatically export variables to
-#' the backend. Instead, I strongly recommend being explicit about what you want
-#' to export to the backend and use the `.export` and `.noexport` arguments.
-#' Similarly, the `.packages` argument can be used to indicate which packages
-#' should be loaded on the backend.
-#'
 #' @return A list containing the results of the parallel computation.
 #'
 #' @keywords internal
-doParabar <- function(obj, expr, envir, data) {
+doPar <- function(obj, expr, envir, data) {
     # Ensure `obj` is of `foreach` type.
     Helper$check_object_type(obj, "foreach")
 
