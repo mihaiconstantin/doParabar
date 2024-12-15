@@ -59,6 +59,10 @@
 "_PACKAGE"
 
 
+# Register globals to avoid false positives in `CRAN` checks.
+utils::globalVariables(c("packages", "cluster"))
+
+
 # On package attach.
 .onAttach <- function(libname, pkgname) {
     # If there this is an interactive session.
