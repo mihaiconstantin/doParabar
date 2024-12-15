@@ -59,11 +59,6 @@
 "_PACKAGE"
 
 
-# On package load.
-.onLoad <- function(libname, pkgname) {
-}
-
-
 # On package attach.
 .onAttach <- function(libname, pkgname) {
     # If there this is an interactive session.
@@ -71,9 +66,4 @@
         # Print package information.
         packageStartupMessage(LOGO)
     }
-}
-
-
-# On package unload.
-.onUnload <- function(libpath) {
 }
