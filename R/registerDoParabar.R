@@ -14,9 +14,9 @@
 #'
 #' @details
 #' Additional information about the registered parallel backend can be extracted
-#' using the [`foreach::getDoParName()`], [`foreach::getDoParRegistered()`],
-#' [`foreach::getDoParVersion()`], and [`foreach::getDoParWorkers()`] functions.
-#' See the **Examples** section.
+#' using the [foreach::getDoParName()], [foreach::getDoParRegistered()],
+#' [foreach::getDoParVersion()], and [foreach::getDoParWorkers()] functions. See
+#' the **Examples** section.
 #'
 #' @section Completeness:
 #' The parallel backend implementation for the [`foreach::%dopar%`] operator is
