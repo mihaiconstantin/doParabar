@@ -22,7 +22,24 @@
 #' @importFrom utils packageDescription
 
 
-#' @template doParabar
+#' @title Foreach Parallel Adaptor For `parabar` Backends
+#'
+#' @details
+#' The [`doParabar::doParabar`] package acts as a [`foreach::foreach`] parallel
+#' adaptor for [`parabar::parabar`] backends. It provides a minimal
+#' implementation for the [`foreach::%dopar%`] operator, enabling seamless
+#' integration of the [`parabar::parabar`] package with the [`foreach::foreach`]
+#' package.
+#'
+#' @section Resources:
+#' - For more information about [`parabar::parabar`], please consult de
+#' documentation and examples at
+#' [parabar.mihaiconstantin.com](https://parabar.mihaiconstantin.com).
+#' - For specific information about using [`parabar::parabar`] in conjunction
+#' with [`foreach::foreach`] please check the online vignette at
+#' [parabar.mihaiconstantin.com/articles/foreach](https://parabar.mihaiconstantin.com/articles/foreach).
+#'
+#' @keywords internal
 "_PACKAGE"
 
 
