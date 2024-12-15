@@ -50,6 +50,11 @@
 
 # On package attach.
 .onAttach <- function(libname, pkgname) {
+    # If there this is an interactive session.
+    if (interactive()) {
+        # Print package information.
+        packageStartupMessage(LOGO)
+    }
 }
 
 
