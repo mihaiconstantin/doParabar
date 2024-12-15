@@ -160,8 +160,8 @@ doParabar <- function(obj, expr, envir, data) {
     )
 
     # Check for any errors.
-    error_value <- getErrorValue(iterator)
-    error_index <- getErrorIndex(iterator)
+    error_value <- foreach::getErrorValue(iterator)
+    error_index <- foreach::getErrorIndex(iterator)
 
     # If the user indicated `stop` on error and an error occurred.
     if (obj$errorHandling == "stop" && !is.null(error_value)) {

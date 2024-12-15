@@ -17,7 +17,7 @@
 
 # Imports.
 #' @importFrom parabar Helper export evaluate par_lapply
-#' @importFrom foreach setDoPar getResult makeAccum
+#' @importFrom foreach setDoPar getResult makeAccum getErrorValue getErrorIndex
 #' @importFrom iterators iter
 #' @importFrom utils packageDescription
 
