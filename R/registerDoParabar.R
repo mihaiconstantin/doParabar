@@ -78,7 +78,8 @@
 #' stop_backend(backend)
 #'
 #' @seealso
-#' [parabar::start_backend()] and [parabar::stop_backend()].
+#' [`doParabar::doParabar`], [doParabar::doPar()], [parabar::start_backend()]
+#' and [parabar::stop_backend()].
 #'
 #' @export
 registerDoParabar <- function(backend) {
