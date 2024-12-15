@@ -36,9 +36,6 @@ You can install `doParabar` directly from `CRAN` using the following command:
 ```r
 # Install the package from `CRAN`.
 install.packages("doParabar")
-
-# Load the package.
-library(doParabar)
 ```
 
 Alternatively, you can also install the latest development version from `GitHub`
@@ -47,10 +44,34 @@ via:
 ```r
 # Install the package from `GitHub`.
 remotes::install_github("mihaiconstantin/doParabar")
+```
 
+Then, load the package as usual using the `library` function:
+
+```r
 # Load the package.
 library(doParabar)
 ```
+
+**_Note._** By default, and for various reasons, the `doParabar` package does
+not automatically load other packages. Instead, it is recommended to load the
+[`foreach`](https://CRAN.R-project.org/package=foreach) and
+[`parabar`](https://parabar.mihaiconstantin.com) packages explicitly in your
+scripts (i.e., or add them to your `Imports` in the `DESCRIPTION` file when
+developing an `R` package).
+
+```r
+# Load the `foreach` package.
+library(foreach)
+
+# Load the `parabar` package.
+library(parabar)
+```
+
+**_Note._** Should you need to suppress the package startup messages (e.g., from
+the [`parabar`](https://parabar.mihaiconstantin.com) package) you can use the
+[`suppressPackageStartupMessages`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/message.html)
+function (e.g., `suppressPackageStartupMessages(parabar)`).
 
 ## Usage
 
