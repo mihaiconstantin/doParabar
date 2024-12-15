@@ -16,27 +16,18 @@ to provide an implementation for the \code{\link[foreach:foreach]{foreach::\%dop
 \details{
 Currently, the following \code{\link[foreach:foreach]{foreach::foreach}} arguments are supported:\tabular{rc}{
    Argument \tab Status \cr
-   \code{...} \tab ✅ \cr
-   \code{.combine} \tab ✅ \cr
-   \code{.init} \tab ✅ \cr
-   \code{.final} \tab ✅ \cr
-   \code{.inorder} \tab ✅ \cr
-   \code{.multicombine} \tab ✅ \cr
-   \code{.maxcombine} \tab ✅ \cr
-   \code{.errorhandling} \tab ✅ \cr
-   \code{.packages} \tab ✅ \cr
-   \code{.export} \tab ✅ \cr
-   \code{.noexport} \tab ✅ \cr
-   \code{.verbose} \tab ✅ \cr
-}
-
-
-Where:
-\itemize{
-\item ✅ indicates that the argument is fully supported
-\item ❌ indicates that the argument is not supported
-\item ❗️ indicates that the argument is partially supported
-\item ❓ indicates that I am unsure about what the argument does
+   \code{...} \tab supported \cr
+   \code{.combine} \tab supported \cr
+   \code{.init} \tab supported \cr
+   \code{.final} \tab supported \cr
+   \code{.inorder} \tab supported \cr
+   \code{.multicombine} \tab supported \cr
+   \code{.maxcombine} \tab supported \cr
+   \code{.errorhandling} \tab supported \cr
+   \code{.packages} \tab supported \cr
+   \code{.export} \tab supported \cr
+   \code{.noexport} \tab supported \cr
+   \code{.verbose} \tab supported \cr
 }
 }
 \keyword{internal}

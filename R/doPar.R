@@ -8,27 +8,20 @@
 #' @details
 #' Currently, the following [`foreach::foreach`] arguments are supported:
 #'
-#' |         Argument | Status |
+#' |         Argument |  Status   |
 #' | ---------------: | :-------: |
-#' |            `...` |     ✅     |
-#' |       `.combine` |     ✅     |
-#' |          `.init` |     ✅     |
-#' |         `.final` |     ✅     |
-#' |       `.inorder` |     ✅     |
-#' |  `.multicombine` |     ✅     |
-#' |    `.maxcombine` |     ✅     |
-#' | `.errorhandling` |     ✅     |
-#' |      `.packages` |     ✅     |
-#' |        `.export` |     ✅     |
-#' |      `.noexport` |     ✅     |
-#' |       `.verbose` |     ✅     |
-#'
-#' Where:
-#'
-#' - ✅ indicates that the argument is fully supported
-#' - ❌ indicates that the argument is not supported
-#' - ❗️ indicates that the argument is partially supported
-#' - ❓ indicates that I am unsure about what the argument does
+#' |            `...` | supported |
+#' |       `.combine` | supported |
+#' |          `.init` | supported |
+#' |         `.final` | supported |
+#' |       `.inorder` | supported |
+#' |  `.multicombine` | supported |
+#' |    `.maxcombine` | supported |
+#' | `.errorhandling` | supported |
+#' |      `.packages` | supported |
+#' |        `.export` | supported |
+#' |      `.noexport` | supported |
+#' |       `.verbose` | supported |
 #'
 #' @return A list containing the results of the parallel computation.
 #'
