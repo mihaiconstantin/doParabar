@@ -31,6 +31,14 @@
 #' integration of the [`parabar::parabar`] package with the [`foreach::foreach`]
 #' package.
 #'
+#' @section Package Loading:
+#' By default, and for various reasons, the [`doParabar::doParabar`] package
+#' does not automatically load other packages. Instead, I recommended to load
+#' the [`foreach::foreach`] and [`parabar::parabar`] packages explicitly in your
+#' scripts (i.e., or add them to your `Imports` in the `DESCRIPTION` file when
+#' developing an `R` package). Package startup messages can be suppressed via
+#' [base::suppressPackageStartupMessages()].
+#'
 #' @section Resources:
 #' - For more information about [`parabar::parabar`], please consult de
 #' documentation and examples at
