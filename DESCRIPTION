@@ -14,12 +14,16 @@ BugReports: https://github.com/mihaiconstantin/doParabar/issues
 Imports:
     parabar,
     foreach,
-    iterators
+    iterators,
+    utils
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Collate:
     'doParabar-package.R'
+    'doParabar.R'
+    'helpers.R'
+    'registerDoParabar.R'
 Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
