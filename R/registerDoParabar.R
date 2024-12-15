@@ -28,6 +28,11 @@
 #' The [doParabar::registerDoParabar()] function returns void.
 #'
 #' @examples
+#' # Manually load the libraries.
+#' library(doParabar)
+#' library(parabar)
+#' library(foreach)
+#'
 #' # Create an asynchronous `parabar` backend.
 #' backend <- start_backend(cores = 2, cluster_type = "psock", backend_type = "async")
 #'
