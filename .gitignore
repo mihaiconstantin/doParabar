@@ -2,7 +2,7 @@
 .Rhistory
 .DS_Store
 .vscode/
-parabar.Rcheck/
+doParabar.Rcheck/
 *.tar.gz
 **/temp*
 .temp
