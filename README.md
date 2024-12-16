@@ -18,7 +18,7 @@
     <a href="https://www.r-pkg.org/pkg/doParabar"><img src="https://cranlogs.r-pkg.org/badges/grand-total/doParabar" alt="CRAN RStudio mirror downloads"/></a>
     <a href="https://github.com/mihaiconstantin/doParabar/actions"><img src="https://github.com/mihaiconstantin/doParabar/workflows/R-CMD-check/badge.svg" alt="R-CMD-check" /></a>
     <a href="https://cran.r-project.org/web/checks/check_results_doParabar.html"><img src="https://badges.cranchecks.info/worst/doParabar.svg" alt="CRAN checks"/></a>
-    <a href="https://parabar.mihaiconstantin.com"><img src="https://img.shields.io/badge/docs-website-brightgreen" alt="Documentation website"/></a>
+    <a href="https://parabar.mihaiconstantin.com/articles/foreach"><img src="https://img.shields.io/badge/docs-website-brightgreen" alt="Documentation website"/></a>
 </p>
 <!-- badges: end -->
 
@@ -36,9 +36,6 @@ You can install `doParabar` directly from `CRAN` using the following command:
 ```r
 # Install the package from `CRAN`.
 install.packages("doParabar")
-
-# Load the package.
-library(doParabar)
 ```
 
 Alternatively, you can also install the latest development version from `GitHub`
@@ -47,10 +44,34 @@ via:
 ```r
 # Install the package from `GitHub`.
 remotes::install_github("mihaiconstantin/doParabar")
+```
 
+Then, load the package as usual using the `library` function:
+
+```r
 # Load the package.
 library(doParabar)
 ```
+
+**_Note._** By default, and for various reasons, the `doParabar` package does
+not automatically load other packages. Instead, it is recommended to load the
+[`foreach`](https://CRAN.R-project.org/package=foreach) and
+[`parabar`](https://parabar.mihaiconstantin.com) packages explicitly in your
+scripts (i.e., or add them to your `Imports` in the `DESCRIPTION` file when
+developing an `R` package).
+
+```r
+# Load the `foreach` package.
+library(foreach)
+
+# Load the `parabar` package.
+library(parabar)
+```
+
+**_Note._** Should you need to suppress the package startup messages (e.g., from
+the [`parabar`](https://parabar.mihaiconstantin.com) package) you can use the
+[`suppressPackageStartupMessages`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/message.html)
+function (e.g., `suppressPackageStartupMessages(parabar)`).
 
 ## Usage
 
@@ -60,27 +81,49 @@ All examples below assume that you have already installed and loaded the
 packages.
 
 ```r
-# Load packages.
-library(parabar)
-library(doParabar)
+# Create an asynchronous `parabar` backend.
+backend <- start_backend(cores = 2, cluster_type = "psock", backend_type = "async")
 
-# Start an asynchronous `parabar` backend as usual.
-backend <- parabar::start_backend(cores = 4, "psock", "async")
+# Register the backend with the `foreach` package for the `%dopar%` operator.
+registerDoParabar(backend)
 
-# Register the backend with the `foreach` package.
-doParabar::registerDoParabar(backend)
+# Get the parallel backend name.
+getDoParName()
 
-# Use the `foreach` package as usual.
-results <- foreach(i = 1:1000, .combine = c) %dopar% {
+# Check that the parallel backend has been registered.
+getDoParRegistered()
+
+# Get the current version of backend registration.
+getDoParVersion()
+
+# Get the number of cores used by the backend.
+getDoParWorkers()
+
+# Define some variables strangers to the backend.
+x <- 10
+y <- 100
+z <- "Not to be exported."
+
+# Used the registered backend to run a task in parallel via `foreach`.
+results <- foreach(i = 1:300, .export = c("x", "y"), .combine = c) %dopar% {
     # Sleep a bit.
     Sys.sleep(0.01)
 
     # Compute and return.
-    i + 1
+    i + x + y
 }
 
+# Show a few results.
+head(results, n = 10)
+tail(results, n = 10)
+
+# Verify that the variable `z` was not exported.
+try(evaluate(backend, z))
+
+# To make packages available on the backend, see the `.packages` argument.
+
 # Stop the backend.
-parabar::stop_backend(backend)
+stop_backend(backend)
 ```
 
 **_Note._** The `doParabar` package provides only a minimal implementation for

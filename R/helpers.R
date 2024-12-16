@@ -34,8 +34,8 @@ getNumberOfWorkers <- function(backend) {
 #' This function is used internally by [`foreach::foreach`] to retrieve
 #' information about the registered [`foreach::%dopar%`] operator
 #' implementation. More specifically, this function is called by
-#' [`foreach::getDoParName()`], [`foreach::getDoParRegistered()`],
-#' [`foreach::getDoParVersion()`], and [`foreach::getDoParWorkers()`].
+#' [foreach::getDoParName()], [foreach::getDoParRegistered()],
+#' [foreach::getDoParVersion()], and [foreach::getDoParWorkers()].
 #'
 #' @param data An object of class [`parabar::Backend`] representing the backend
 #' used for the [`foreach::%dopar%`] operator implementation.

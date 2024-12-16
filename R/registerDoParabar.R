@@ -1,4 +1,4 @@
-#' @include doParabar.R helpers.R
+#' @include doPar.R helpers.R
 
 #' @title
 #' Register Parallel Implementation
@@ -14,15 +14,15 @@
 #'
 #' @details
 #' Additional information about the registered parallel backend can be extracted
-#' using the [`foreach::getDoParName()`], [`foreach::getDoParRegistered()`],
-#' [`foreach::getDoParVersion()`], and [`foreach::getDoParWorkers()`] functions.
-#' See the **Examples** section.
+#' using the [foreach::getDoParName()], [foreach::getDoParRegistered()],
+#' [foreach::getDoParVersion()], and [foreach::getDoParWorkers()] functions. See
+#' the **Examples** section.
 #'
 #' @section Completeness:
 #' The parallel backend implementation for the [`foreach::%dopar%`] operator is
-#' provided by the [doParabar::doParabar()] function. Please check the
-#' **Details** section of its documentation to understand the extent of
-#' completeness of the implementation.
+#' provided by the [doParabar::doPar()] function. Please check the **Details**
+#' section of its documentation to understand the extent of completeness of the
+#' implementation.
 #'
 #' @return
 #' The [doParabar::registerDoParabar()] function returns void.
@@ -78,14 +78,15 @@
 #' stop_backend(backend)
 #'
 #' @seealso
-#' [parabar::start_backend()] and [parabar::stop_backend()].
+#' [`doParabar::doParabar`], [doParabar::doPar()], [parabar::start_backend()]
+#' and [parabar::stop_backend()].
 #'
 #' @export
 registerDoParabar <- function(backend) {
     # Register the `%dopar%` operator implementation.
     foreach::setDoPar(
         # The implementation.
-        fun = doParabar,
+        fun = doPar,
 
         # Information to be passed to the registered implementation.
         data = backend,

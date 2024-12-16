@@ -22,15 +22,15 @@ operator implementation.
 \details{
 Additional information about the registered parallel backend can be extracted
 using the \code{\link[foreach:getDoParWorkers]{foreach::getDoParName()}}, \code{\link[foreach:getDoParWorkers]{foreach::getDoParRegistered()}},
-\code{\link[foreach:getDoParWorkers]{foreach::getDoParVersion()}}, and \code{\link[foreach:getDoParWorkers]{foreach::getDoParWorkers()}} functions.
-See the \strong{Examples} section.
+\code{\link[foreach:getDoParWorkers]{foreach::getDoParVersion()}}, and \code{\link[foreach:getDoParWorkers]{foreach::getDoParWorkers()}} functions. See
+the \strong{Examples} section.
 }
 \section{Completeness}{
 
 The parallel backend implementation for the \code{\link[foreach:foreach]{foreach::\%dopar\%}} operator is
-provided by the \code{\link[=doParabar]{doParabar()}} function. Please check the
-\strong{Details} section of its documentation to understand the extent of
-completeness of the implementation.
+provided by the \code{\link[=doPar]{doPar()}} function. Please check the \strong{Details}
+section of its documentation to understand the extent of completeness of the
+implementation.
 }
 
 \examples{
@@ -85,5 +85,6 @@ stop_backend(backend)
 
 }
 \seealso{
-\code{\link[parabar:start_backend]{parabar::start_backend()}} and \code{\link[parabar:stop_backend]{parabar::stop_backend()}}.
+\code{\link{doParabar}}, \code{\link[=doPar]{doPar()}}, \code{\link[parabar:start_backend]{parabar::start_backend()}}
+and \code{\link[parabar:stop_backend]{parabar::stop_backend()}}.
 }
