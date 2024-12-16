@@ -1,6 +1,6 @@
 Package: doParabar
 Title: Foreach Parallel Adaptor For `parabar` Backends
-Version: 0.0.1
+Version: 1.0.0
 Authors@R:
     person(given = "Mihai",
            family = "Constantin",
