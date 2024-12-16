@@ -1,3 +1,9 @@
+# doParabar 1.0.1
+
+## Fixed
+- Changed `Title` in `DESCRIPTION` to follow the title case convention as per
+  `CRAN` recommendation.
+
 # doParabar 1.0.0
 
 ## Added
