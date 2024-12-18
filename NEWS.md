@@ -1,5 +1,9 @@
 # doParabar 1.0.2
 
+## Changed
+- Improve `README.md` note style.
+- Add link to the `foreach` vignette provided in the `parabar` package.
+
 ## Fixed
 - Fixed `DESCRIPTION` in line with `CRAN` comments.
 
