@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Provides a `foreach` parallel adaptor for `parabar` backends.
+Provides a 'foreach' parallel adapter for 'parabar' backends. This package offers a minimal implementation of the '%dopar%' operator, enabling users to run 'foreach' loops in parallel, leveraging the parallel and progress-tracking capabilities of the 'parabar' package. Learn more about 'parabar' and 'doParabar' at \url{https://parabar.mihaiconstantin.com}.
 }
 \details{
 The \code{\link{doParabar}} package acts as a \code{\link[foreach:foreach]{foreach::foreach}} parallel
@@ -52,7 +52,7 @@ with \code{\link[foreach:foreach]{foreach::foreach}} please check the online vig
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://parabar.mihaiconstantin.com}
+  \item \url{https://github.com/mihaiconstantin/doParabar https://parabar.mihaiconstantin.com/articles/foreach}
   \item Report bugs at \url{https://github.com/mihaiconstantin/doParabar/issues}
 }
 
