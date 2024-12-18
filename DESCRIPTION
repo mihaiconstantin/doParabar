@@ -7,7 +7,11 @@ Authors@R:
            role = c("aut", "cre"),
            email = "mihai@mihaiconstantin.com",
            comment = c(ORCID = "0000-0002-6460-0107"))
-Description: Provides a `foreach` parallel adaptor for `parabar` backends.
+Description: Provides a 'foreach' parallel adapter for 'parabar' backends. This
+    package offers a minimal implementation of the '%dopar%' operator, enabling
+    users to run 'foreach' loops in parallel, leveraging the parallel and
+    progress-tracking capabilities of the 'parabar' package. Learn more about
+    'parabar' and 'doParabar' at <https://parabar.mihaiconstantin.com>.
 License: MIT + file LICENSE
 URL: https://parabar.mihaiconstantin.com
 BugReports: https://github.com/mihaiconstantin/doParabar/issues
