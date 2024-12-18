@@ -1,3 +1,8 @@
+# doParabar 1.0.2
+
+## Fixed
+- Fixed `DESCRIPTION` in line with `CRAN` comments.
+
 # doParabar 1.0.1
 
 ## Fixed
