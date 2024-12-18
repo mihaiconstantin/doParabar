@@ -130,8 +130,9 @@ try(evaluate(backend, z))
 stop_backend(backend)
 ```
 
-**_Note._** The `doParabar` package provides only a minimal implementation for
-the `foreach::%dopar%` operator. If you need additional functionality, please
+> [!NOTE]
+> The `doParabar` package provides only a minimal implementation for the
+`foreach::%dopar%` operator. If you need additional functionality, please
 consider contributing to the package, or opening an issue on `GitHub`.
 
 ## Contributing
