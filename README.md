@@ -80,6 +80,10 @@ Below you can find a minimal example of how to use `doParabar` and
 All examples below assume that you have already installed and loaded the
 packages.
 
+> [!TIP]
+> For a more detailed discussion see the vignette "[Using `parabar` with
+> `foreach`](https://parabar.mihaiconstantin.com/articles/foreach)".
+
 ```r
 # Create an asynchronous `parabar` backend.
 backend <- start_backend(cores = 2, cluster_type = "psock", backend_type = "async")
