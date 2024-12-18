@@ -13,8 +13,7 @@ Description: Provides a 'foreach' parallel adapter for 'parabar' backends. This
     progress-tracking capabilities of the 'parabar' package. Learn more about
     'parabar' and 'doParabar' at <https://parabar.mihaiconstantin.com>.
 License: MIT + file LICENSE
-URL:
-    https://github.com/mihaiconstantin/doParabar
+URL: https://github.com/mihaiconstantin/doParabar,
     https://parabar.mihaiconstantin.com/articles/foreach
 BugReports: https://github.com/mihaiconstantin/doParabar/issues
 Imports:

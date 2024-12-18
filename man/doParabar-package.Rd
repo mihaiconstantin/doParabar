@@ -52,7 +52,8 @@ with \code{\link[foreach:foreach]{foreach::foreach}} please check the online vig
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/mihaiconstantin/doParabar https://parabar.mihaiconstantin.com/articles/foreach}
+  \item \url{https://github.com/mihaiconstantin/doParabar}
+  \item \url{https://parabar.mihaiconstantin.com/articles/foreach}
   \item Report bugs at \url{https://github.com/mihaiconstantin/doParabar/issues}
 }
 
