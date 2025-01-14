@@ -80,9 +80,8 @@ Below you can find a minimal example of how to use `doParabar` and
 All examples below assume that you have already installed and loaded the
 packages.
 
-> [!TIP]
-> For a more detailed discussion see the vignette "[Using `parabar` with
-> `foreach`](https://parabar.mihaiconstantin.com/articles/foreach)".
+**_Tip._** For a more detailed discussion see the vignette "[Using `parabar`
+with `foreach`](https://parabar.mihaiconstantin.com/articles/foreach)".
 
 ```r
 # Create an asynchronous `parabar` backend.
@@ -130,10 +129,9 @@ try(evaluate(backend, z))
 stop_backend(backend)
 ```
 
-> [!NOTE]
-> The `doParabar` package provides only a minimal implementation for the
-`foreach::%dopar%` operator. If you need additional functionality, please
-consider contributing to the package, or opening an issue on `GitHub`.
+**_Note._** The `doParabar` package provides only a minimal implementation
+for the `foreach::%dopar%` operator. If you need additional functionality, 
+please consider contributing to the package, or opening an issue on `GitHub`.
 
 ## Contributing
 - Any contributions are welcome and greatly appreciated. Please open a [pull
